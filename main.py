@@ -109,7 +109,7 @@ def go(config: DictConfig):
             os.path.join(root_path, "evaluate"),
             "main",
             parameters={
-                "model_export": config["random_forest_pipeline"]["export_artifact"] + ":prod",
+                "model_export": config["random_forest_pipeline"]["export_artifact"] + ":latest",
                 "test_data": "data_test.csv:latest"
             },
         )
